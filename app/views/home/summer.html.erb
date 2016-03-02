@@ -1,0 +1,7 @@
+<h2>Enter two #'s'</h2>
+<%= form_tag sum_path, method: :get do %>
+    <%= text_field_tag :val1 %>
+     +
+    <%=text_field_tag :val2 %>
+    <%= submit_tag "Submit", name: nil %>
+<% end %>
