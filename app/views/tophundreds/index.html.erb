@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tophundreds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Genre</th>
+      <th>Songname</th>
+      <th>Artistname</th>
+      <th>Rank</th>
+      <th>Lyrics</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tophundreds.each do |tophundred| %>
+      <tr>
+        <td><%= tophundred.genre %></td>
+        <td><%= tophundred.songname %></td>
+        <td><%= tophundred.artistname %></td>
+        <td><%= tophundred.rank %></td>
+        <td><%= tophundred.lyrics %></td>
+        <td><%= link_to 'Show', tophundred %></td>
+        <td><%= link_to 'Edit', edit_tophundred_path(tophundred) %></td>
+        <td><%= link_to 'Destroy', tophundred, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tophundred', new_tophundred_path %>

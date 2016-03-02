@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @tophundred.genre %>
+</p>
+
+<p>
+  <strong>Songname:</strong>
+  <%= @tophundred.songname %>
+</p>
+
+<p>
+  <strong>Artistname:</strong>
+  <%= @tophundred.artistname %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @tophundred.rank %>
+</p>
+
+<p>
+  <strong>Lyrics:</strong>
+  <%= @tophundred.lyrics %>
+</p>
+
+<%= link_to 'Edit', edit_tophundred_path(@tophundred) %> |
+<%= link_to 'Back', tophundreds_path %>
