@@ -1,6 +1,15 @@
+<h2>Enter two #'s'</h2>
+<%= form_tag summult_path, method: :get do %>
+    <%= text_field_tag :val1 %>
+     *
+    <%=text_field_tag :val2 %>
+    <%= submit_tag "Submit", name: nil %>
+
 <h2><%= @val1 %></h2>
 *
 <h2><%= @val2 %></h2>
 =
 <h1><%= @val1 * @val2 %></h1>
-<%= link_to "Try Again", summermult_path %>
+<%= link_to "Try Again", summult_path %>
+
+<% end %>

@@ -4,8 +4,6 @@ class HomeController < ApplicationController
   end
   # This will be to gather the two values that will be added together
   # GET /summer
-  def summer
-  end
   # This will return the two values that you wanted added as well as the sum of the two
   # GET params[:val1] AND params[:val2] and return /sum
   def sum
@@ -16,9 +14,6 @@ class HomeController < ApplicationController
       @val1 = params[:val1].to_f
       @val2 = params[:val2].to_f
     end
-  end
-
-  def summermult
   end
 
   def summult
