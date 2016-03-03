@@ -1,5 +1,5 @@
 <h2>Enter Six #'s'</h2>
-<%= form_tag complex2_path, method: :get do %>
+<%= form_tag complex1_path, method: :get do %>
     <%=text_field_tag :val1 %>
      +
     <%=text_field_tag :val2 %>
@@ -13,4 +13,25 @@
     <%=text_field_tag :val6 %>
 
     <%= submit_tag "Submit", name: nil %>
+
+    <h2><%= @val1 %></h2>
+    +
+    <h2><%= @val2 %></h2>
+    -
+    <h2><%= @val3 %></h2>
+    *
+    <h2><%= @val4 %></h2>
+    +
+    <h2><%= @val5 %></h2>
+    -
+    <h2><%= @val6 %></h2>
+    =
+    <h1><%= (@val1 + @val2 - @val3) * (@val4 + @val5 - @val6) %></h1>
+    <%= link_to "Try Again", complex1_path %>
+
+
+
+
+
+
 <% end %>
