@@ -7,9 +7,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-     get '/summer' => 'home#summer'
      get '/sum' => 'home#sum'
-     get '/summermult' => 'home#summermult'
      get '/summult' => 'home#summult'
      get '/complex1' => 'home#complex1'
 
