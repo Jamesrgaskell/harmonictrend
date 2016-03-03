@@ -17,4 +17,17 @@ class HomeController < ApplicationController
       @val2 = params[:val2].to_f
     end
   end
+
+  def summermult
+  end
+
+  def summult
+    if params[:val1].blank? || params[:val2].blank?
+      @val1 = 0
+      @val2 = 0
+    else
+      @val1 = params[:val1].to_f
+      @val2 = params[:val2].to_f
+    end
+  end
 end
