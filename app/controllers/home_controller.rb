@@ -35,14 +35,7 @@ class HomeController < ApplicationController
   end
 
   def complex2
-    if params[:val1, :val2, :val3, :val4, :val5, :val6].blank?
-      @val1 = 0
-      @val2 = 0
-      @val3 = 0
-      @val4 = 0
-      @val5 = 0
-      @val6 = 0
-    else
+  if
       @val1 = params[:val1].to_f
       @val2 = params[:val2].to_f
       @val3 = params[:val3].to_f
@@ -50,4 +43,5 @@ class HomeController < ApplicationController
       @val5 = params[:val5].to_f
       @val6 = params[:val6].to_f
   end
+end
 end
