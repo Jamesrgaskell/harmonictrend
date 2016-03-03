@@ -11,6 +11,8 @@ Rails.application.routes.draw do
      get '/sum' => 'home#sum'
      get '/summermult' => 'home#summermult'
      get '/summult' => 'home#summult'
+     get '/complex1' => 'home#complex1'
+     get '/complex2' => 'home#complex2'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

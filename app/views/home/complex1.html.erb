@@ -1,0 +1,16 @@
+<h2>Enter Six #'s'</h2>
+<%= form_tag complex2_path, method: :get do %>
+    <%=text_field_tag :val1 %>
+     +
+    <%=text_field_tag :val2 %>
+     -
+    <%=text_field_tag :val3 %>
+     *
+    <%=text_field_tag :val4 %>
+     +
+    <%=text_field_tag :val5 %>
+     -
+    <%=text_field_tag :val6 %>
+
+    <%= submit_tag "Submit", name: nil %>
+<% end %>
